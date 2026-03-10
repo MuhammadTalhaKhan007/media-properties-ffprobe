@@ -1,50 +1,56 @@
-# FFprobe Media Properties
+# 🎧 FFprobe Media Properties
 
-This project allows you to quickly check **media/audio properties** (codec, sample rate, channels, duration, bitrate) using `ffprobe` in Node.js.
-
----
-
-## Prerequisites
-
-- Node.js installed
-- `ffprobe` installed via `ffprobe-static` (included in dependencies)
-- `ffmpeg` installed on your system (optional if you want to convert audio)
+> Instantly inspect **audio & media file properties** — codec, sample rate, channels, duration, and bitrate — using `ffprobe` in Node.js.
 
 ---
 
-## Installation
+## 📋 Prerequisites
 
-1. Clone the repo:
+| Requirement | Details                                     |
+| ----------- | ------------------------------------------- |
+| **Node.js** | Any modern version                          |
+| **ffprobe** | Included via `ffprobe-static` dependency    |
+| **ffmpeg**  | Optional — only needed for audio conversion |
+
+---
+
+## ⚙️ Installation
+
+**1. Clone the repository**
 
 ```bash
 git clone https://github.com/MuhammadTalhaKhan007/media-properties-ffprobe.git
 cd media-properties-ffprobe
 ```
 
-2. Install dependencies:
+**2. Install dependencies**
 
 ```bash
 npm install
 ```
 
-## Usage
+---
 
-1. Open index.js and change the file path to your audio file:
+## 🚀 Usage
 
-```bash
+**1. Set your target file**
+
+Open `index.js` and update the file path:
+
+```js
 // Change this to the file you want to inspect
 const filePath = "./Call-Center.mp3";
 ```
 
-2. Run the script:
+**2. Run the script**
 
 ```bash
 node index.js
 ```
 
-3. The console will display the audio properties:
+**3. View the output**
 
-```bash
+```json
 {
   "codec": "pcm_s16le",
   "sampleRate": "8000 Hz",
@@ -54,8 +60,16 @@ node index.js
 }
 ```
 
-## Notes
+---
 
-- Make sure your audio file exists at the specified path.
-- Works with `.mp3`, `.wav`, `.m4a`, and other common audio formats supported by ffprobe.
-- You can edit the script to print additional properties if needed.
+## 📁 Supported Formats
+
+`.mp3` &nbsp;·&nbsp; `.wav` &nbsp;·&nbsp; `.m4a` &nbsp;·&nbsp; `.flac` &nbsp;·&nbsp; `.ogg` &nbsp;·&nbsp; and any format supported by `ffprobe`
+
+---
+
+## 📝 Notes
+
+- Make sure your audio file exists at the specified path before running.
+- Additional properties can be extracted by editing the script to include more `ffprobe` fields.
+- `ffprobe-static` bundles the binary, so no separate system install is required.
