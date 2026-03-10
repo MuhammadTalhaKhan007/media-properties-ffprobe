@@ -39,7 +39,7 @@ Open `index.js` and update the file path:
 
 ```js
 // Change this to the file you want to inspect
-const filePath = "./Call-Center.mp3";
+const filePath = "./Call-Center-Audio.mp3";
 ```
 
 **2. Run the script**

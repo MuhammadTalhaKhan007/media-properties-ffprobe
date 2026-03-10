@@ -1,7 +1,9 @@
 const ffprobe = require("ffprobe");
 const ffprobeStatic = require("ffprobe-static");
 
-ffprobe("./Call-Center-Audio.mp3", { path: ffprobeStatic.path })
+const filePath = "./Call-Center-Audio.mp3"; // Change me
+
+ffprobe(filePath, { path: ffprobeStatic.path })
   .then((info) => {
     const stream = info.streams[0];
 
