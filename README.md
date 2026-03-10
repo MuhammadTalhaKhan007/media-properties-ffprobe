@@ -31,7 +31,7 @@ npm install
 
 ---
 
-## 🚀 Usage
+## ⚡ Usage
 
 **1. Set your target file**
 
